@@ -43,3 +43,4 @@ Ou avec Android Studio : ouvrir le dossier, *Build → Build APK*.
 
 Licence : GPL-3.0 (voir `LICENSE` et `ATTRIBUTION.md`).
 # ClintTaskerPlugin
+# ClintTaskerPlugin
