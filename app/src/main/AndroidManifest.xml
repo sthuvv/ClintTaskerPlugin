@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <application
+        android:allowBackup="false"
+        android:label="Clint Tasker Plugin"
+        android:usesCleartextTraffic="true"
+        android:theme="@android:style/Theme.Material.Light">
+
+        <activity
+            android:name=".tasker.DetectConfigActivity"
+            android:exported="true"
+            android:label="Clint : détecter vidéo">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.ACTION_EDIT_SETTING" />
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".tasker.DownloadConfigActivity"
+            android:exported="true"
+            android:label="Clint : télécharger vidéo">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.ACTION_EDIT_SETTING" />
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
